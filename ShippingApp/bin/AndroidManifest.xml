@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.shipping.tribune"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <!--
+	  IMPORTANT: If you change the package name of this sample app, change
+	  "com.parse.tutorials.pushnotifications.permission.C2D_MESSAGE" in the
+	  lines below to match the new package name.
+    -->
+    <permission
+        android:name="com.shipping.tribune.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.shipping.tribune.permission.C2D_MESSAGE" />
+
+    <application
+        android:name=".Application"
+        android:allowBackup="true"
+        android:icon="@drawable/logonew"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".HomeScreen"
+            android:label="@string/title_activity_home_screen"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".HomeFragment"
+            android:label="@string/title_activity_home_fragment" >
+        </activity>
+        <activity
+            android:name=".News"
+            android:label="@string/title_activity_news" >
+        </activity>
+        <activity
+            android:name=".PushNotificationActivity"
+            android:label="@string/title_activity_push_notification" >
+        </activity>
+
+        <service android:name="com.parse.PushService" />
+
+        <receiver android:name="com.parse.ParseBroadcastReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.parse.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <!--
+				  IMPORTANT: If you change the package name of this sample app,
+				  change "com.parse.tutorials.pushnotifications" in the lines
+				  below to match the new package name.
+                -->
+                <category android:name="com.shipping.tribune" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".LocalNews"
+            android:label="@string/title_activity_local_news" >
+        </activity>
+        <activity
+            android:name=".PortNews"
+            android:label="@string/title_activity_port_news" >
+        </activity>
+        <activity
+            android:name=".EnergyNews"
+            android:label="@string/title_activity_energy_news" >
+        </activity>
+        <activity
+            android:name=".ShippBuilding"
+            android:label="@string/title_activity_shipp_building" >
+        </activity>
+        <activity
+            android:name=".ShipRecycling"
+            android:label="@string/title_activity_ship_recycling" >
+        </activity>
+        <activity
+            android:name=".VideoActivity"
+            android:label="@string/title_activity_video" >
+        </activity>
+        <activity
+            android:name=".YoutubePlayer"
+            android:label="@string/title_activity_youtube_player"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".Offshorenews"
+            android:label="@string/title_activity_offshorenews" >
+        </activity>
+        <activity
+            android:name=".Arcticle"
+            android:label="@string/title_activity_arcticle" >
+        </activity>
+        <activity
+            android:name=".GeneralNews"
+            android:label="@string/title_activity_general_news" >
+        </activity>
+        <activity
+            android:name=".Career"
+            android:label="@string/title_activity_career" >
+        </activity>
+        <activity
+            android:name=".DetailActivity"
+            android:label="@string/title_activity_detail" >
+        </activity>
+        <activity
+            android:name=".AboutUs"
+            android:label="@string/title_activity_about_us" >
+        </activity>
+        <activity
+            android:name=".Interview"
+            android:label="@string/title_activity_interview" >
+        </activity>
+    </application>
+
+</manifest>

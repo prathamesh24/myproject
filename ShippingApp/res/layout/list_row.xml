@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#DCDCDC"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/newsPic"
+            android:layout_width="120dip"
+            android:layout_height="120dip"
+            android:layout_margin="10dip"
+            android:adjustViewBounds="true"
+            android:background="@drawable/custom_shape"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/news"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dip"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/newsPic" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="30dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:textColor="@android:color/white"
+        android:paddingLeft="10dip"
+        android:background="#DF781F" />
+
+</LinearLayout>

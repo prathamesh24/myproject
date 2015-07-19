@@ -1,0 +1,11 @@
+[2015-06-03 22:38:32 - ShippingApp] New keystore C:\Users\LENOVA\Desktop\ShippingApp\ShippingApp.apk has been created.
+[2015-06-03 22:38:32 - ShippingApp] Certificate fingerprints:
+[2015-06-03 22:38:32 - ShippingApp]   MD5 : 6F:D5:15:8B:1B:87:21:DD:A1:2B:79:3E:8B:68:9C:88
+[2015-06-03 22:38:32 - ShippingApp]   SHA1: E0:82:C5:EB:52:81:0D:57:3C:89:28:61:DB:BF:D9:77:A0:16:6B:72
+
+password shippingapp
+name Prathamesh Gujar
+org Mobile Development
+city shahapur
+state maharashtra
+company name pice
